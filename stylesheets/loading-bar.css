@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000;
+    color: #fff;
+}
+.loading-bar {
+    position: absolute;
+    width: 450px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+.loading-bar::after {
+    content: '';
+    background: linear-gradient(135deg, red, orange,purple,green);
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    animation: progress 2s linear forwards infinite;
+}
+@keyframes progress {
+    100% {
+        width: 90%;
+    }
+}
+.load {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+}
