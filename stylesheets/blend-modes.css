@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* Learnt different blend-modes while using CSS in this work */
 body {
     background: url(/images/architecture-1869451_1920.jpg);
     background-color: rgb(209, 39, 39);
